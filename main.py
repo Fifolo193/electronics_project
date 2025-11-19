@@ -12,7 +12,7 @@ def process_data(raw_bytes):
     #df = pd.DataFrame(data)
     #df['processed'] = df['value'] * 2
     #result = df.to_dict('records')
-    d = {"result" : [1,2,3,4]}
+    result = {"result" : [1,2,3,4]}
     # ←←← end of your code
     
     return result
@@ -35,4 +35,5 @@ def home():
     return "Send pickled data to /process"
 
 if __name__ == "__main__":
+
     app.run(host='0.0.0.0', port=8080)
